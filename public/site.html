@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManekiManga</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+
+    <div class="header">
+
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="site.html"><img src="images/logo.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="site.html">Home</a></li>
+                        <li><a href="#produkty" onclick='showProducts()'>Mangas</a></li>
+                        <li><a href="#about" onclick='showAbout()'>About</a></li>
+                        <li><a href="#contact" onclick='showContact()'>Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>The best place<br>to buy shonen and seinen manga◕⩊◕</h1>
+                    <p>When you want to buy your favourite shonen or seinen manga,<br>even an archive one from the
+                        90's...<br>ManekiManga is the place to do so!</p>
+                    <a href="#produkty" onclick='showProducts()' class="btn">See what's new! &#10153</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/mangalogos.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----kategorie-------------->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/category-1.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-2.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-3.jpg">
+                </div>
+            </div>
+        </div>
+        <!--produkty----->
+        <div class="small-container" id="produkty" style="display:none;">
+            <h2 class="title">Latest Releases</h2>
+            <div class="row">
+                <div class="col-4">
+                    <a href="#detailsBerserkvol41"><img src="images/berserkvol41.jpg" onclick='showDetails(1)'></a>
+                    <a href="#detailsBerserkvol41" onclick='showDetails(1)'>
+                        <h4>Berserk Vol. 41</h4>
+                    </a>
+                    <p>19.50€</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/chainsaw13.jpg">
+                    <h4>Chainsaw Man Vol. 13</h4>
+                    <p>19.50€</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/mha37.jpg">
+                    <h4>My Hero Academia Vol. 37</h4>
+                    <p>18.50€</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/opm25.jpg">
+                    <h4>One-Punch Man Vol. 25</h4>
+                    <p>18.50€</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/exvol.1.jpg">
+                    <h4>Blue Exorcist Vol. 30</h4>
+                    <p>10.00€</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/jojolandsvol1.jpg">
+                    <h4>JoJo's Land Vol. 1</h4>
+                    <p>12.99€</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/jkvol1.jpg">
+                    <h4>Jujutsu Kaisen Vol. 24</h4>
+                    <p>11.50€</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/tg_re.jpg">
+                    <h4>Tokyo Ghoul:re Vol. 12</h4>
+                    <p>8.99€</p>
+                </div>
+            </div>
+            <h2 class="title">Fan's Favourites (｡♥‿♥｡)</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/dsvol1.jpg">
+                    <h4>Demon Slayer Vol. 1</h4>
+                    <p>10.00€</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/dbvol1.jpg">
+                    <h4>Dragon Ball Vol. 1</h4>
+                    <p>9.99€</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/opvol1.jpg">
+                    <h4>One Piece Vol. 1</h4>
+                    <p>9.50€</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/narutovol1.jpg">
+                    <h4>Naruto Vol. 1</h4>
+                    <p>7.50€</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="detailsBerserkvol41" style="display:none;">
+            <div class="small-container single-product">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="images/berserkvol41.jpg" alt="No picture :c" width="90%">
+                    </div>
+                    <div class="col-2">
+                        <p>Home / Mangas</p>
+                        <h1> Berserk Vol. 41</h1>
+                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi neque quo aliquid sint
+                            voluptatem! Suscipit, sit expedita aliquam vero dignissimos ad voluptate quod aliquid
+                            pariatur dicta adipisci ab, labore necessitatibus!</h3><br>
+                        <h4>19.50€</h4>
+                        <a href="" class="btn">Add to cart</a>
+                        <h2>Product details:</h2>
+                        <p>Tags</p>
+                        <p>Series</p>
+                        <p>Publisher</p>
+                        <p>Author</p>
+                        <p>Age category</p>
+                        <p># of volumes</p>
+                        <p>Size</p>
+                        <p>Original title</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- -----title------->
+            <div class="small-container">
+                <div class="row row-2">
+                    <h2>Similar Mangas:</h2>
+                    <p>View More</p>
+                </div>
+            </div>
+
+            <!--produkty----->
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/dsvol1.jpg">
+                        <h4>Demon Slayer Vol. 1</h4>
+                        <p>10.00€</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/dbvol1.jpg">
+                        <h4>Dragon Ball Vol. 1</h4>
+                        <p>9.99€</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/opvol1.jpg">
+                        <h4>One Piece Vol. 1</h4>
+                        <p>9.50€</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/narutovol1.jpg">
+                        <h4>Naruto Vol. 1</h4>
+                        <p>7.50€</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---offer-->
+        <div id="offer" class="offer">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="images/akira.png" class="offer-img">
+                    </div>
+                    <div class="col-2">
+                        <p>
+                            Exclusive Offer in ManekiManga!
+                        </p>
+                        <h1>Akira<br>35th Anniversary Box Collection</h1>
+                        <p>An all-new, complete 35th anniversary hardcover box set of one of the most acclaimed
+                            and
+                            influential comics of all time,
+                            with the original Japanese art and right-to-left reading format for the first time!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <section class="about" style="display:none;"> -->
+        <div id="about" style="display:none;">
+            <h1>Our Manga Universe:</h1>
+            <p>At ManekiManga, we pride ourselves on curating a diverse and extensive catalog that spans across all
+                genres imaginable. Whether you're into action-packed shonen, heartwarming shoujo, mind-bending seinen,
+                or captivating josei, we've got you covered.Our collection includes both classic titles and the latest
+                releases, ensuring that every manga aficionado finds something to cherish.</p>
+            <h1>Why Choose ManekiManga?</h1>
+            <p>1. Vast Selection: Explore our ever-growing library featuring manga in multiple languages, ensuring that
+                language is no barrier to your manga adventure.</br>
+                </br>
+                2. Ease of Navigation: Our user-friendly website design allows you to browse through genres, authors,
+                and series effortlessly. Find what you're looking for with just a few clicks.</br>
+                </br>
+                3. New Releases: Stay up-to-date with the latest manga releases. We make it a priority to bring you the
+                freshest chapters and volumes as soon as they hit the market.</br>
+                </br>
+                4. Exclusive Deals and Discounts: Enjoy exclusive deals and discounts,making your manga shopping
+                experience</br> not only enjoyable but also budget-friendly.</br>
+                </br>
+                5. Secure Transactions: Rest easy knowing that your transactions are secure.</br> We prioritize the
+                safety
+                and privacy of our customers.</br>
+                </br>
+                6. Community Hub: Join our thriving manga community to discuss your favorite series,</br> recommend
+                titles,
+                and connect with fellow manga enthusiasts.</p>
+            <h1>Customer Satisfaction is Our Priority.</h1>
+            <p>At ManekiManga, we understand the importance of customer satisfaction.<br> Our dedicated customer support
+                team is ready to assist you with any inquiries,</br> ensuring that your shopping experience is as smooth
+                as
+                possible.</p>
+        </div>
+        <!-- </section> -->
+
+        <div id="contact" style="display:none;">
+            <h1>Contact:</h1>
+            <p><span>Instagram:</span> @manekimanga_shop</br>
+                <span>Twitter:</span> maneki_mangasop</br>
+                <span>Snapchat:</span> manekimangashop</br>
+                <span>Facebook:</span> ManekiManga</br>
+                <span>Telephone:</span> +48265879980</br>
+                <span>E-mail:</span> faqmanekimanga@gmail.com
+            </p>
+
+        </div>
+
+        <footer>
+            <section class="footer">
+                <div class="social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-snapchat"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <ul class="list">
+                    <li>
+                        <a href="site.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#produkty" onclick='showProducts()'>Mangas</a>
+                    </li>
+                    <li>
+                        <a href="#about" onclick='showAbout()'>About</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                </ul>
+                <p class="copyright">ManekiManga 2023 ◕⩊◕</p>
+            </section>
+    </div>
+
+    </footer>
+</body>
+
+</html>

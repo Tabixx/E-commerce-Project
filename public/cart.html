@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shopping cart - ManekiManga</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+
+
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                <a href="site.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="site.html">Home</a></li>
+                    <li><a href="products.html">Mangas</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon"
+            onclick="menutoggle()">
+            </div>
+        </div>
+
+<!-- ------cart items details------ -->
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/berserkvol41.jpg" alt="No picture :c">
+                        <div>
+                            <p>Berserk Manga vol.41</p>
+                            <small>Price: 19.50€</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>19.50€</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/chainsaw13.jpg" alt="No picture :c">
+                        <div>
+                            <p>Chainsaw Man Manga vol.13</p>
+                            <small>Price: 19.50€</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>19.50€</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/opvol1.jpg" alt="No picture :c">
+                        <div>
+                            <p>One Piece Manga vol.1</p>
+                            <small>Price: 9.50€</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>9.50€</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>48,50€</td>
+                </tr>
+                <tr>
+                    <td>Shipping price</td>
+                    <td>10,00€</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>58,50€</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+<section class="footer">
+    <div class="social">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-snapchat"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+    </div>
+    <ul class="list">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">Services</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Terms</a>
+      </li>
+      <li>
+        <a href="#">Privacy Policy</a>
+      </li>
+    </ul>
+    <p class="copyright">ManekiManga 2023 ◕⩊◕</p>
+  </section>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+var MenuItems = document.getElementById("MenuItems");
+
+MenuItems.style.maxHeight = "0px";
+function menutoggle(){
+if(MenuItems.style.maxHeight =="0px")
+{
+    MenuItems.style.maxHeight = "200px";
+}
+else
+{
+    MenuItems.style.maxHeight = "0px";
+}
+}
+</script>
+</html>
